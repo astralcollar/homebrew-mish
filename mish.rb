@@ -9,12 +9,12 @@ class Mish < Formula
   depends_on "gradle"
 
   def install
-    ENV["JAVA_HOME"] = Formula["openjdk@17"].opt_prefix  # Usar JDK 17
+    ENV["JAVA_HOME"] = Formula["openjdk@17"].opt_prefix
     
-
     system "gradle", "installDist"
     
-    libexec.install Dir["build/install/mish-cli/*"]
+    libexec.install Dir["build/install/mish/*"] 
+    
     bin.install_symlink "#{libexec}/bin/mish-cli" => "mish"
   end
 
