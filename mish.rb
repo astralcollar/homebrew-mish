@@ -2,7 +2,7 @@ class Mish < Formula
   desc "Streamlined Android development tool - One-command app deployment"
   homepage "https://github.com/astralcollar/mish-cli"
   url "https://github.com/astralcollar/mish-cli/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "a1aac582560a1483001978b812f7efdbba6167484efca038c7db72ad19a885b1"
+  sha256 "bc35abad123bf0322c56e7cf26a63448037bfcd6c18c1ed74a9e847fc3762fe1"
   license "MIT"
 
   depends_on "openjdk@11"
